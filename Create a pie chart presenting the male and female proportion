@@ -2,6 +2,26 @@
 import matplotlib.pyplot as plt
 import numpy as np
 
+import pandas as pd
+import numpy as np
+
+titanic=pd.read_csv("https://raw.githubusercontent.com/Geoyi/Cleaning-Titanic-Data/master/titanic_original.csv")
+
+sex=titanic['sex']
+age=titanic['age']
+fare=titanic['fare']
+male_index_val=[]
+female_index_val=[]
+
+for index in range(len(sex)):
+    value = sex[index]
+    if value =='male':
+        male_index_val =index
+        #print(index, value, male_index_val)
+    elif value =='female':
+        female_index_val=index
+        #print(index, value, female_index_val)
+
 count_male=0
 count_female=0
 for i in sex:
