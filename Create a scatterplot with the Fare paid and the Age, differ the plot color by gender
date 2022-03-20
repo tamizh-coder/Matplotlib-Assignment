@@ -1,1 +1,23 @@
-1
+# Create a scatterplot with the Fare paid and the Age, differ the plot color by gender
+import matplotlib.pyplot as plt
+import pandas as pd
+import numpy as np
+
+titanic=pd.read_csv("https://raw.githubusercontent.com/Geoyi/Cleaning-Titanic-Data/master/titanic_original.csv")
+
+sex=titanic['sex']
+age=titanic['age']
+fare=titanic['fare']
+
+
+x = np.array([age])
+y = np.array([fare])
+
+
+
+plt.scatter(x, y)
+
+
+
+
+plt.show()
