@@ -2,6 +2,18 @@
 import matplotlib.pyplot as plt
 import numpy as np
 
+count_male=0
+count_female=0
+for i in sex:
+    if i == 'male':
+        count_male+=1
+    else:
+        count_female+=1
+
+print(count_male)
+print(count_female)
+
+
 y = np.array([count_male, count_female])
 mylabels = ["Male", "Female"]
 mycolors = ["#0009F0", "#F035A5"]
