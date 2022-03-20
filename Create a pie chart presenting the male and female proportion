@@ -1,0 +1,10 @@
+# Create a pie chart presenting the male and female proportion
+import matplotlib.pyplot as plt
+import numpy as np
+
+y = np.array([count_male, count_female])
+mylabels = ["Male", "Female"]
+mycolors = ["#0009F0", "#F035A5"]
+
+plt.pie(y, labels = mylabels, colors = mycolors)
+plt.show()
