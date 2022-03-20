@@ -1,0 +1,17 @@
+Max = 39, 41, 43, 47, 49, 51, 45, 38, 37, 29, 27, 25
+Min = 21, 23, 27, 28, 32, 35, 31, 28, 21, 19, 17, 18
+
+
+import numpy as np
+import matplotlib.pyplot as plt
+
+x = np.array(Min)
+y = np.array(Max)
+
+plt.plot(x, marker ="o")
+plt.plot(y, marker ="o")
+plt.title("Graph")
+plt.xlabel("Month")
+plt.ylabel("Temprature('C)")
+
+plt.show()
